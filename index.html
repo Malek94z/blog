@@ -416,108 +416,19 @@
                 <p class="section-description">Sharing my experiences, learnings, and thoughts on technology,
                     leadership, and innovation.</p>
             </div>
-            <div class="blog-grid">
-                <!-- Blog Post 1 -->
-                <article class="blog-card" data-aos="fade-up">
-                    <div class="blog-card-header">
-                        <div class="blog-category">Engineering</div>
-                        <div class="blog-date">December 2024</div>
-                    </div>
-                    <h3 class="blog-title">Building Scalable Healthcare Systems</h3>
-                    <p class="blog-excerpt">
-                        Lessons learned from improving system maintainability by 40% and the architectural decisions
-                        that made it possible. A deep dive into our journey at Yodawy.
-                    </p>
-                    <div class="blog-footer">
-                        <div class="blog-read-time">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="8" cy="8" r="6" />
-                                <path d="M8 4v4l3 2" />
-                            </svg>
-                            <span>5 min read</span>
-                        </div>
-                        <a href="#" class="blog-read-more">
-                            Read More
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
+            <div class="blog-grid" id="blog-container">
+                <!-- Loading State -->
+                <div class="blog-loading">
+                    <div class="spinner"></div>
+                    <p>Loading insights...</p>
+                </div>
+                
+                <!-- Blog posts will be injected here -->
+            </div>
 
-                <!-- Blog Post 2 -->
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-card-header">
-                        <div class="blog-category">Leadership</div>
-                        <div class="blog-date">November 2024</div>
-                    </div>
-                    <h3 class="blog-title">The Art of Cross-Functional Collaboration</h3>
-                    <p class="blog-excerpt">
-                        How effective communication between engineering, product, and design teams can transform
-                        project outcomes and drive innovation.
-                    </p>
-                    <div class="blog-footer">
-                        <div class="blog-read-time">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="8" cy="8" r="6" />
-                                <path d="M8 4v4l3 2" />
-                            </svg>
-                            <span>4 min read</span>
-                        </div>
-                        <a href="#" class="blog-read-more">
-                            Read More
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Blog Post 3 -->
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-card-header">
-                        <div class="blog-category">Product</div>
-                        <div class="blog-date">October 2024</div>
-                    </div>
-                    <h3 class="blog-title">Data-Driven Decision Making in Startups</h3>
-                    <p class="blog-excerpt">
-                        How we built KPI dashboards that showcased our business growth and helped secure our
-                        first investment round.
-                    </p>
-                    <div class="blog-footer">
-                        <div class="blog-read-time">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="8" cy="8" r="6" />
-                                <path d="M8 4v4l3 2" />
-                            </svg>
-                            <span>6 min read</span>
-                        </div>
-                        <a href="#" class="blog-read-more">
-                            Read More
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Add More Posts Card -->
-                <article class="blog-card blog-card-add" data-aos="fade-up" data-aos-delay="300">
-                    <div class="blog-add-content">
-                        <div class="blog-add-icon">✍️</div>
-                        <h3 class="blog-add-title">More Coming Soon</h3>
-                        <p class="blog-add-text">
-                            I regularly share insights about engineering, product management, and leadership.
-                            Stay tuned for more articles!
-                        </p>
-                    </div>
-                </article>
+            <!-- Dashboard Link (Visible to Admins or just hidden in footer) -->
+            <div class="admin-access-link" style="text-align: center; margin-top: 3rem; opacity: 0.5;">
+                <a href="admin.html" style="font-size: 0.8rem; color: var(--text-muted); text-decoration: none;">Admin Dashboard</a>
             </div>
         </div>
     </section>
@@ -581,7 +492,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
